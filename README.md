@@ -8,6 +8,10 @@ mit dem eine als Pfad übergebene Zeichenkette daraufhin überprüft wird, ob es
 
 <br>
 
+Die im Ordner [public](public/) enthaltene Datei `openapi.yaml` ist als Übungsaufgabe zu vervollständingen.
+
+<br>
+
 ----
 
 ## License ##
