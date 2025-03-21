@@ -1,0 +1,11 @@
+openapi: 3.0.0
+info:
+    title: Palindom-Checker
+    version: 1.0.0
+
+paths:
+  # TODO: REST-Endpunkt spezifizieren
+
+components:
+  schemas:
+    # TODO: Rückgabetyp REST-Endpunkt spezifizieren
