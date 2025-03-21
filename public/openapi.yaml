@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-    title: Palindom-Checker
+    title: Palindrom-Checker
     version: 1.0.0
 
 paths:
@@ -8,4 +8,27 @@ paths:
 
 components:
   schemas:
-    # TODO: Rückgabetyp REST-Endpunkt spezifizieren
+    Ergebnis:
+      type: object
+      properties:
+        eingabe:
+          type: string
+          description: Die normierte Eingabe (nur Kleinbuchstaben, Leerzeichen am Anfang/Ende entfernt)
+        istPalindrom:
+          type: boolean
+          description: Gibt an, ob die Eingabe ein Wortpalindrom ist oder nicht
+        nachricht:
+          type: string
+          description: Textnachricht, die das Ergebnis beschreibt
+      required:
+        - eingabe
+        - nachricht
+        - istPalindrom
+    Fehler:
+      type: object
+      properties:
+        nachricht:
+          type: string
+          description: Fehlermeldung
+      required:
+        - nachricht
