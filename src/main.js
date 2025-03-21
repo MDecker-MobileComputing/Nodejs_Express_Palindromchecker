@@ -11,7 +11,6 @@ const app    = express();
 app.use( express.static( "public" ) );
 
 routenRegistrieren( app );
-
 swaggerUiKonfigurieren( app );
 
 // Server starten

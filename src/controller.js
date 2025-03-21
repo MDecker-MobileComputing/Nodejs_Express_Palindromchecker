@@ -1,5 +1,4 @@
-import logging from "logging";
-
+import logging            from "logging";
 import wortPalindromCheck from "./service.js";
 
 const logger = logging.default( "controller" );
