@@ -20,7 +20,6 @@ const REGEXP_KLEINBUCHSTABEN = /^[a-zäöüß]+$/
 export default function wortPalindromCheck( eingabe ) {
 
     const eingabeNorm = eingabe.trim().toLowerCase();
-    const laenge      = eingabeNorm.length;
 
     if ( REGEXP_KLEINBUCHSTABEN.test( eingabeNorm ) === false ) {
 
@@ -39,7 +38,6 @@ export default function wortPalindromCheck( eingabe ) {
 
     return new PalindromCheckErgebnis( eingabeNorm,
                                        istPalindrom,
-                                       laenge,
                                        nachricht
                                      );
 }
