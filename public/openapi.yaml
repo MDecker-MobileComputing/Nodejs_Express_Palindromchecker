@@ -11,7 +11,7 @@ components:
     Ergebnis:
       type: object
       properties:
-        eingabe:
+        inputNormiert:
           type: string
           description: Die normierte Eingabe (nur Kleinbuchstaben, Leerzeichen am Anfang/Ende entfernt)
         istPalindrom:
