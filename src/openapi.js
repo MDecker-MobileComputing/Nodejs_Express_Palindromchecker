@@ -1,8 +1,8 @@
-import logging   from "logging";
-import swaggerUi from "swagger-ui-express";
-import yaml      from "yamljs";
+import createLogger from "logging";
+import swaggerUi    from "swagger-ui-express";
+import yaml         from "yamljs";
 
-const logger = logging.default( "swagger" );
+const logger = createLogger( "openapi" );
 
 /*
  * Datei mit Beschreibung der Endpunkte der REST-API im OpenAPI-Format.

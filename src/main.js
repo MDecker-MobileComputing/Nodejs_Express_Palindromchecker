@@ -1,11 +1,11 @@
-import express from "express";
-import logging from "logging";
+import express      from "express";
+import createLogger from "logging";
 
 import swaggerUiKonfigurieren from "./openapi.js";
 import routenRegistrieren     from "./controller.js";
 
 
-const logger = logging.default( "main" );
+const logger = createLogger( "main" );
 const app    = express();
 
 app.use( express.static( "public" ) );

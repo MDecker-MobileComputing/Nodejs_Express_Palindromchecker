@@ -1,17 +1,16 @@
 {
-  "dependencies": {
-    "express": "^4.21.2",
-    "logging": "^3.3.0",
-    "lowdb": "^7.0.1",
-    "swagger-ui-express": "^5.0.1",
-    "yamljs": "^0.3.0"
-  },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.14"
   },
   "type": "module",
   "scripts": {
     "start": "node src/main.js",
     "watch": "nodemon --ignore db.json src/main.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "logging": "^4.2.0",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
   }
 }
